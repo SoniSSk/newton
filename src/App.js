@@ -1,11 +1,7 @@
 import React, { useState } from 'react'
 
 function App() {
-  const myStyle={
-    
-    width:'203%',
-    height:'200px',
-    };
+  
   const [state, setState] = useState(20)
   const [state1, setState1] = useState("")
 const handleCharLimit = (event) =>{
@@ -34,7 +30,7 @@ const handlestate3 = (event) =>{
 
   return (
     <div>
-      <p>Char Limit:-<input value={state} onChange={handleCharLimit} ></input> <input type="color" value={state3} onChange={handlestate3}></input>  
+      <p>Char Limit:-<input value={state} onChange={handleCharLimit} type ="number"></input> <input type="color" value={state3} onChange={handlestate3}></input>  
       <input value={state1} onChange={handlestate1} ></input><input type ="range" min ="1" max="100" value ={state2} onChange={handlestate2} ></input></p>
       <div style={{background: "red", }}><p>{state1}</p></div>
     
