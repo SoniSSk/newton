@@ -7,8 +7,13 @@ const handleCharLimit = (event) =>{
   setState(event.target.value);
 }
 const handlestate1 = (event) =>{
- alert(state1.length);
+ if (state1.length <=state){
   setState1(event.target.value);
+}
+else{
+  setState1("");
+}
+
 
 }
 const [state2, setState2] = useState(50);
